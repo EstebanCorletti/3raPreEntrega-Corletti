@@ -1,0 +1,226 @@
+html {margin: 0;
+padding: 0%;
+font-family: Arial, Helvetica, sans-serif;}
+
+body {background-color: black;
+     padding: 0%;
+     margin: 0%;}
+
+header{width: 100%;
+    position: sticky;
+   z-index: 200;
+  top: 0%;
+background-color: black;}
+
+
+.logo{margin-left: 35%;
+}
+
+nav ul {list-style-type: none;
+padding-top: 1%;
+padding-left: 15%;
+padding-bottom: 1%;}
+
+nav ul li {display: inline-block;
+font-size: 1rem;
+margin-left: 10%;}
+
+nav ul li a {text-decoration: none;
+color: antiquewhite;}
+
+main {width: 100%;
+background-image: url(../assets/imagen/background.png);
+background-attachment: fixed;
+padding-bottom: 1%;
+}
+
+.imagenPrincipal img{width: 100%;
+height: 60vh;}
+
+.imagenNosotros{width: 100%;
+    height: 60vh;
+    padding: 0%;
+    margin: 0;
+    background-image: url(../assets/imagen/nosotros_background.jpg);
+    background-size: cover;
+margin-top: 2%;}
+
+.imagenRegistrate{width: 100%;
+    height: 60vh;
+    padding: 0%;
+    margin: 0;
+    background-image: url(../assets/imagen/registro_principal.png);
+    background-size: cover;
+margin-top: 2%;}
+
+.imagenSucursales{width: 100%;
+    height: 60vh;
+    padding: 0%;
+    margin: 0;
+    background-image: url(../assets/imagen/sucursales_background.jpg);
+    background-size: cover;
+margin-top: 2%;}
+
+.imagenMenu{width: 100%;
+    height: 60vh;
+    padding: 0%;
+    margin: 0;
+    background-image: url(../assets/imagen/menu_principal.png);
+    background-size: cover;
+margin-top: 2%;}
+
+.registrateContenedor{
+    width: 23%;
+    text-align: center;
+    margin-left: 51%;
+    padding-top: 2%;
+    font-size: 80%;
+}
+
+.contenedorComida {width: 30%;
+                margin-left: 1%;
+                display: inline-block;
+                margin-top: 3%;}
+
+.contenedorComida img {width: 100%;
+                     border-radius: 1rem;
+                     border-color: whitesmoke;
+                    border: solid;}
+
+.infoComida {text-align: center;
+             }
+
+.infoComida {width: 100%;
+    backdrop-filter: blur(12px);
+    border: solid;
+    border-radius: 1rem;
+    border-color: white;}
+
+.infoComida p {padding: 3%;
+    font-size: 0.9rem;}
+
+.beneficiosRegistroContenedor {margin-top: 2%;
+                    color: whitesmoke;
+                    margin-left: 15%;
+                    width: 65%;
+                    backdrop-filter: blur(12px);
+                    border-radius: 1rem;}
+
+.beneficiosRegistroContenedor h3 {padding: 2%;}
+
+.beneficiosRegistroContenedor p {margin-left: 3%;}
+
+.listaBeneficios {margin-left: 3%;}
+
+form {font-weight: bold;
+      margin-top: 10%;}
+
+input {width: 75%;
+       border-radius: 0.2rem;
+       height: 3vh;
+       margin-top: 2%;}
+
+.submit {width: 30%;
+         height: 5vh;
+        font-family: Arial, Helvetica, sans-serif;}
+
+article{margin-left: 15%;
+    width: 70%;
+margin-top: 1%;
+color: whitesmoke;}
+
+.intro img {width: 100%;
+    border-color: whitesmoke;
+    border: solid;
+    border-radius: 1rem;}
+
+.intro{width: 45%;
+display: inline-block;
+margin-left: 2%;
+color: whitesmoke;}
+
+.intro p {font-size: 90%;}
+
+.intro h3 {text-align: center;}
+
+.intro a {text-decoration: none;
+            color: whitesmoke;}
+
+section {margin-left: 15%;
+    width: 70%;
+margin-top: 2%;}
+
+.comidas{width: 45%;
+    display: inline-block;
+    margin-left: 2%;
+    color: whitesmoke;}
+
+.comidas img {width: 100%;
+    border-color: whitesmoke;
+border: solid;
+border-radius: 1rem;}
+
+iframe {width: 100%;
+       height: 35vh;
+    border-color: whitesmoke;
+border: solid;
+border-radius: 1rem;}
+
+.contenedorSucursales iframe {width: 45%;
+            height: 40vh;
+            padding: 2%;
+            display: inline-block;
+            }
+
+.comidas p {font-size: 90%;
+            text-align: right;}
+
+.comidas h1 {text-align: right;}
+
+.comidas h3 {text-align: center;}
+
+.comidas a {text-decoration: none;
+            color: whitesmoke;}
+
+.comidas video {width: 100%;}
+
+.contenedorSucursales{width: 100%;
+                      border: solid;
+                      border-color: whitesmoke;
+                      border-radius: 1rem;
+                      backdrop-filter: blur(12px);
+                    display: inline-block;
+                color: whitesmoke;
+            margin-top: 2%;}
+
+.sucursalInfo{width: 45%;
+               display: inline-block;
+               padding: 2%;
+            height: 30vh;}
+
+.sucursalInfo h2 {text-align: center;}
+                
+footer{width: 100%;
+margin-top: 5%;
+background-image: url(../assets/imagen/footer_background.png);}
+
+footer h3 {color: white;
+           text-align: center;
+        opacity: 0.8;
+padding-top: 2%;}
+
+footer img {display: inline-block;
+           width: 20%;
+           margin-left: 10%;
+        opacity: 0.8;}
+
+.iconBox {margin-left: 30%;
+margin-top: 2%;}
+
+.socialIcons {color: antiquewhite;
+text-decoration: none;
+margin-left: 10%;}
+
+footer h5 {text-align: center;
+           color: whitesmoke;
+        margin-top: 5%;}
