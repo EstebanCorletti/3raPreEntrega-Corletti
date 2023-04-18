@@ -77,9 +77,8 @@ html {margin: 0;
         height: 60vh;
         padding: 0%;
         margin: 0;
-        background-image: url(../assets/imagen/menu_principal.png);
-        background-size: cover;
-    margin-top: 2%;}
+        background-image: url(../assets/imagen/menu_principal.jpeg);
+        background-size: cover;}
     
     .registrateContenedor{
         width: 25%;
