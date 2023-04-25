@@ -1,0 +1,31 @@
+footer {
+    width: 100%;
+    background-image: url(../assets/imagen/footer_background.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3 {
+        color: white;
+        text-align: center;
+        opacity: 0.8;
+        padding-top: 2%;}
+    .sponsors img {
+        width: 80%;}
+    .iconBox {
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+        a {
+            padding: 0% 2%;
+            .socialIcons {
+                color: antiquewhite;
+                text-decoration: none;
+                         }
+                }     
+            }
+    h5 {
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 5%;
+              }
+}
