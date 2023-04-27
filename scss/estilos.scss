@@ -4,45 +4,7 @@ body {
     margin: 0%;
 }
 
-header {
-    position: sticky;
-    z-index: 200;
-    top: 0%;
-    background-color: black;
-    display: flex;
-    justify-content: space-evenly;
-
-    .logo {
-        width: 10%;
-        padding: 1% 0%;
-    }
-
-    .logo img {
-        width: 100%;
-        display: flex;
-    }
-
-    nav {
-        width: 40%;    
-        ul {
-        display: flex;
-        padding-top: 5%;
-        list-style-type: none;
-            li {
-            padding: 0% 5%;    
-                a {text-decoration: none;
-                   font-family: Arial, Helvetica, sans-serif;
-                   color: antiquewhite;
-                   font-size: 1rem;
-                   font-weight: bold;    
-                        &:hover {color: green;
-                                }
-                    }
-                }
-            }
-        }
-
-}
-
-@import "_mainintro";
-@import "_footer";
+@import "header.scss";
+@import "mainintro.scss";
+@import "mainmenu.scss";
+@import "footer.scss";
