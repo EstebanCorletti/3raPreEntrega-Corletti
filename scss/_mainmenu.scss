@@ -4,6 +4,9 @@
     padding-top: 0%;
     padding-bottom: 2%;
 
+    h1 {color: map-get($colors, main);
+       font-family: $main_font;}
+
     img {
         width: 100%;
         height: 60vh;
@@ -13,14 +16,52 @@
         margin-left: 10%;
         width: 75%;
         margin-top: 1%;
-        color: antiquewhite;
-
-        h3 {
+        h2 {
             margin-top: 5%;
+            color: map-get($colors, main);
+            font-family: $main_font;
         }
 
         p {
             margin-top: 2%;
+            color: antiquewhite;
+        }
+
+        .cards {
+            margin-top: 2%;
+
+            .card-container {
+                border: solid;
+                border-color: map-get($colors, main);
+
+                img {
+                    height: 40vh;
+                }
+
+                .card-body {
+                    background-color: map-get($colors, second);
+                    @extend .card-container;
+                    .card-title {
+                        color: map-get($colors, main);
+                        font-family: $main_font;
+                        text-align: map-get($alineamientos, med);
+                        margin-top: map-get($margins, 2);
+                    }
+                    .card-prize {
+                        color: map-get($colors, third);
+                        @extend .card-title;
+                    }
+
+                    .card-text {
+                        color: map-get($colors, main);
+                        font-family: $secondary_font;
+                        margin-top: map-get($margins, 10);
+                        text-align: map-get($alineamientos, med);
+
+                    }
+                    
+                }
+            }
         }
 
         .especiales {
@@ -29,6 +70,7 @@
 
         .postres {
             margin-top: 5%;
+            color: map-get($colors, main);
         }
 
     }

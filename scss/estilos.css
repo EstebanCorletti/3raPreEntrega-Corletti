@@ -184,7 +184,8 @@ main .container .col-xl-6 a:hover {
   border: solid;
   border-color: whitesmoke;
   border-radius: 1rem;
-  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
   color: whitesmoke;
   margin-top: 2%;
 }
@@ -221,53 +222,6 @@ main .container .col-xl-6 a:hover {
   width: 100%;
 }
 
-.registrate {
-  width: 100%;
-  background-attachment: fixed;
-  background-image: url(../assets/imagen/background.png);
-  padding-top: 0%;
-  padding-bottom: 2%;
-}
-.registrate .imagenRegistrate {
-  width: 100%;
-  height: 60vh;
-  padding: 0%;
-  margin: 0;
-  background-image: url(../assets/imagen/registro_principal.png);
-  background-size: cover;
-  display: flex;
-  justify-content: flex-end;
-}
-.registrate .imagenRegistrate .registrateContenedor {
-  width: 50%;
-  text-align: center;
-  font-size: 80%;
-  padding-right: 20%;
-  margin-top: 2%;
-}
-.registrate .imagenRegistrate .registrateContenedor h2 {
-  font-family: "Roboto", sans-serif;
-}
-.registrate .imagenRegistrate .registrateContenedor p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-}
-.registrate .imagenRegistrate .registrateContenedor form {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.registrate .imagenRegistrate .registrateContenedor form label {
-  margin-top: 2%;
-}
-.registrate .imagenRegistrate .registrateContenedor form input {
-  width: 50%;
-}
-.registrate .imagenRegistrate .registrateContenedor form .submit {
-  margin-top: 5%;
-}
-
 footer {
   width: 100%;
   background-image: url(../assets/imagen/footer_background.png);
@@ -300,6 +254,4 @@ footer h5 {
   text-align: center;
   color: whitesmoke;
   margin-top: 5%;
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

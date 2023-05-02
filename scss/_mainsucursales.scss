@@ -1,0 +1,93 @@
+.sucursales {
+    width: 100%;
+    background-image: url(../assets/imagen/background.png);
+    background-attachment: fixed;
+    padding-top: 0%;
+    padding-bottom: 2%;
+
+    .imagenSucursales {
+        img {
+            width: 100%;
+            height: 60vh;
+        }
+    }
+
+    .intro_sucursales {
+        margin-left: 10%;
+        width: 75%;
+        margin-top: 2%;
+        color: whitesmoke;
+    }
+
+    .seccion_sucursales {
+        margin-left: 10%;
+        width: 75%;
+        margin-top: 2%;
+
+        .contenedor_moreno {
+            width: 100%;
+            border: solid;
+            border-color: whitesmoke;
+            border-radius: 1rem;
+            backdrop-filter: blur(12px);
+            color: whitesmoke;
+            margin-top: map-get($margins, 2);
+
+            .sucursal {
+                margin-top: map-get($margins, 10);
+
+                .sucursalInfo {
+                    margin-top: map-get($margins, 5);
+
+                    h4 {
+                        text-decoration: underline;
+                        color: map-get($colors, third);
+                        font-family: $main_font;
+                        font-weight: map-get($grosores, 7);
+                    }
+
+                    h5 {
+                        font-family: $main_font;
+                    }
+                }
+
+            }
+
+            iframe {
+                height: 60vh;
+                padding: 1%;
+                width: 100%;
+                border-radius: 5%;
+            }
+        }
+
+        .contenedor_isidro_casanova {
+            @extend .contenedor_moreno;
+
+            .sucursal_isidro_casanova {
+                @extend .sucursal;
+
+                .sucursalInfo_isidro_casanova {
+                    @extend .sucursalInfo;
+
+                    h4 {
+                        text-decoration: underline;
+                    }
+
+                    h5 {
+                        font-weight: map-get($grosores, 1);
+                    }
+                }
+
+            }
+
+            iframe {
+                height: 60vh;
+                padding: 1%;
+                width: 100%;
+            }
+        }
+
+    }
+
+}
