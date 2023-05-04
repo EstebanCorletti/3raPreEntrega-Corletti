@@ -4,28 +4,69 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    h3 {
+
+    h4 {
         color: white;
         text-align: center;
         opacity: 0.8;
-        padding-top: 2%;}
-    .sponsors img {
-        width: 80%;}
+        padding-top: 2%;
+    }
+
+    .container_footer {
+        margin-left: 5%;
+        width: 90%;
+
+        .sponsors {
+            img {
+                width: 70%;
+
+                &:hover {
+                    opacity: 70%;
+                }
+            }
+        }
+    }
+
     .iconBox {
         margin-top: 2%;
         display: flex;
         justify-content: center;
+
         a {
             padding: 0% 2%;
+
             .socialIcons {
-                color: antiquewhite;
+                color: map-get($colors, main);
                 text-decoration: none;
-                         }
-                }     
             }
+        }
+    }
+
     h5 {
-    text-align: center;
-    color: whitesmoke;
-    margin-top: 5%;
-              }
+        text-align: center;
+        color: whitesmoke;
+        margin-top: 5%;
+    }
+}
+
+
+@media screen and (min-width:0px) and (max-width: 768px) {
+
+    footer {
+        .sponsors {
+            img {
+                width: 100%;
+            }
+        }
+
+        h4 {
+            margin-top: map-get($margins, 10)
+        }
+
+        h5 {
+            font-size: 0.8rem;
+            margin-top: map-get($margins, 10);
+        }
+
+    }
 }

@@ -4,35 +4,123 @@ main {
     background-attachment: fixed;
     padding-top: 0%;
     padding-bottom: 2%;
+
     .imagenPrincipal {
         img {
-        width: 100%;
-        height: 60vh;
-         }
+            @include imagenes_principales (60vh);
+
+        }
     }
 
     .container {
         margin-top: 1%;
-        .row {
+
+        .introNosotros {
             margin-top: 2%;
-        }
-        .intro img {
-            width: 100%;
-            border-color: whitesmoke;
-            border: solid;
-            border-radius: 1rem;
-            color: whitesmoke;
+
+            .imagen_intro--nosotros {
+                img {
+                    width: 100%;
+                    border-color: map-get($colors, main);
+                    border: solid;
+                    border-radius: 1rem;
+                    animation: float infinite 2s ease-in-out;
+                    color: map-get($colors, main);
+                }
             }
-        .col-xl-6 {
+
+            .imagen_intro--menu {
+                img {
+                    width: 100%;
+                    border-color: map-get($colors, main);
+                    border: solid;
+                    border-radius: 1rem;
+                    color: map-get($colors, main);
+                    animation: float infinite 2s ease-in-out;
+                }
+            }
+        }
+
+        .quienes_somos {
             color: antiquewhite;
             text-align: center;
-            h2 {text-align: center;
-                color: antiquewhite;
-                font-size: 2rem;}
-            a {text-decoration: none;
+
+            h2 {
+                @extend .quienes_somos;
+                font-size: 2rem;
+            }
+
+            a {
+                text-decoration: none;
                 color: whitesmoke;
-            &:hover {color: green;}
+
+                &:hover {
+                    color: green;
+                }
             }
         }
+
+        .ordernar_intro {
+            @extend .quienes_somos;
+        }
     }
+}
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+@media screen and (min-width:0px) and (max-width: 768px) {
+
+    main {
+        .imagenPrincipal {
+            img {
+                @include imagenes_principales (30vh);
+            }
+        }
+
+        .container {
+            margin-top: 5%;
+
+            .introNosotros {
+                width: 90%;
+                margin-left: 5%;
+
+                .quienes_somos {
+                    margin-top: 5%;
+
+                    p {
+                        @include menu-intro-texto ($secondary_font, 5%);
+                    }
+                }
+            }
+
+            .introMenu {
+                width: 95%;
+                margin-left: 2%;
+                display: flex;
+                flex-direction: column-reverse;
+                margin-top: 5%;
+
+                p {
+                    margin-top: 5%;
+                }
+            }
+        }
+
+    }
+
 }

@@ -4,27 +4,24 @@
     padding-top: 0%;
     padding-bottom: 2%;
 
-    h1 {color: map-get($colors, main);
-       font-family: $main_font;}
+    h1 {
+        @include menu-intro-texto ($main_font, 3%);
+    }
 
     img {
-        width: 100%;
-        height: 60vh;
+        @include imagenes_principales (60vh);
+
     }
 
     .contenedorMenu {
-        margin-left: 10%;
-        width: 75%;
-        margin-top: 1%;
+        @include contenedor-paginas-elementos (75%, 1%, left);
+
         h2 {
-            margin-top: 5%;
-            color: map-get($colors, main);
-            font-family: $main_font;
+            @include menu-intro-texto ($main_font, 5%);
         }
 
         p {
-            margin-top: 2%;
-            color: antiquewhite;
+            @include menu-intro-texto ($secondary_font, 2%);
         }
 
         .cards {
@@ -41,31 +38,28 @@
                 .card-body {
                     background-color: map-get($colors, second);
                     @extend .card-container;
+
                     .card-title {
-                        color: map-get($colors, main);
-                        font-family: $main_font;
-                        text-align: map-get($alineamientos, med);
-                        margin-top: map-get($margins, 2);
+                        @include card-body-text($main_font, 2%);
                     }
+
                     .card-prize {
                         color: map-get($colors, third);
                         @extend .card-title;
                     }
 
                     .card-text {
-                        color: map-get($colors, main);
-                        font-family: $secondary_font;
-                        margin-top: map-get($margins, 10);
-                        text-align: map-get($alineamientos, med);
+                        @include card-body-text($secondary_font, 10%);
 
                     }
-                    
+
                 }
             }
         }
 
         .especiales {
             margin-top: 5%;
+            color: map-get($colors, main)
         }
 
         .postres {
@@ -73,6 +67,34 @@
             color: map-get($colors, main);
         }
 
+    }
+
+}
+
+@media screen and (min-width:0px) and (max-width: 768px) {
+
+    .menu {
+        img {
+            @include imagenes_principales (30vh);
+
+        }
+
+        .contenedorMenu {
+            @include contenedor-paginas-elementos (80%, 5%, center);
+
+            h2 {
+                margin-top: 10%;
+            }
+
+            .especiales {
+                margin-top: 10%;
+            }
+
+            .postres {
+                margin-top: 10%;
+                color: map-get($colors, main);
+            }
+        }
     }
 
 }

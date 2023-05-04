@@ -7,47 +7,48 @@
 
     .imagenSucursales {
         img {
-            width: 100%;
-            height: 60vh;
+            @include imagenes_principales (60vh);
+
         }
     }
 
     .intro_sucursales {
-        margin-left: 10%;
-        width: 75%;
-        margin-top: 2%;
-        color: whitesmoke;
+        @include contenedor-sucursales-elementos (75%, 2%);
+
     }
 
     .seccion_sucursales {
-        margin-left: 10%;
-        width: 75%;
-        margin-top: 2%;
+        @extend .intro_sucursales;
 
         .contenedor_moreno {
             width: 100%;
             border: solid;
-            border-color: whitesmoke;
+            border-color: map-get($colors, main);
             border-radius: 1rem;
             backdrop-filter: blur(12px);
-            color: whitesmoke;
+            color: map-get($colors, main);
             margin-top: map-get($margins, 2);
 
-            .sucursal {
-                margin-top: map-get($margins, 10);
+            .contenedor_sucursales {
+                text-align: map-get($alineamientos, med);
+                padding: 5%;
 
-                .sucursalInfo {
-                    margin-top: map-get($margins, 5);
+                .sucursal {
+                    margin-top: map-get($margins, 10);
 
-                    h4 {
-                        text-decoration: underline;
-                        color: map-get($colors, third);
-                        font-family: $main_font;
-                        font-weight: map-get($grosores, 7);
-                    }
+                    .sucursalInfo {
+                        margin-top: map-get($margins, 5);
 
-                    h5 {
-                        font-family: $main_font;
+                        h4 {
+                            text-decoration: underline;
+                            color: map-get($colors, third);
+                            font-family: $main_font;
+                            font-weight: map-get($grosores, 7);
+                        }
+
+                        h5 {
+                            font-family: $secondary_font;
+                        }
                     }
                 }
 
@@ -75,6 +76,7 @@
                     }
 
                     h5 {
+                        font-family: $secondary_font;
                         font-weight: map-get($grosores, 1);
                     }
                 }
@@ -86,6 +88,111 @@
                 padding: 1%;
                 width: 100%;
             }
+        }
+
+    }
+
+}
+
+
+
+@media screen and (min-width:0px) and (max-width: 768px) {
+
+    .sucursales {
+        .imagenSucursales {
+
+            img {
+                @include imagenes_principales (30vh);
+
+            }
+        }
+
+        .intro_sucursales {
+            @include contenedor-sucursales-elementos (80%, 5%);
+
+            p {
+                margin-top: map-get($margins, 5);
+            }
+        }
+
+        .seccion_sucursales {
+            @include contenedor-sucursales-elementos (80%, 5%);
+            ;
+
+            .contenedor_moreno {
+                width: 100%;
+                border: solid;
+                border-color: map-get($colors , main);
+                border-radius: 1rem;
+                backdrop-filter: blur(12px);
+                color: map-get($colors , main);
+                margin-top: map-get($margins, 2);
+
+                .contenedor_sucursales {
+                    text-align: map-get($alineamientos, med);
+                    padding: 5%;
+
+                    .sucursal {
+                        margin-top: map-get($margins, 10);
+
+                        .sucursalInfo {
+                            margin-top: map-get($margins , 10);
+
+                            h4 {
+                                text-decoration: underline;
+                                color: map-get($colors, third);
+                                font-family: $main_font;
+                                font-weight: map-get($grosores, 7);
+                            }
+
+                            h5 {
+                                font-family: $secondary_font;
+                            }
+                        }
+                    }
+
+                }
+
+                iframe {
+                    height: 40vh;
+                    padding: 1%;
+                    width: 100%;
+                    border-radius: 5%;
+                    margin-top: map-get($margins, 10)
+                }
+            }
+
+            .contenedor_isidro_casanova {
+                @extend .contenedor_moreno;
+
+                .sucursal_isidro_casanova {
+                    @extend .sucursal;
+
+                    .sucursalInfo_isidro_casanova {
+                        @extend .sucursalInfo;
+
+                        h4 {
+                            text-decoration: underline;
+                            color: map-get($colors, third);
+                            font-family: $main_font;
+                            font-weight: map-get($grosores, 7);
+                        }
+
+                        h5 {
+                            font-family: $secondary_font;
+                        }
+                    }
+
+                }
+
+                iframe {
+                    height: 40vh;
+                    padding: 1%;
+                    width: 100%;
+                    margin-top: map-get($margins, 10)
+                }
+            }
+
         }
 
     }

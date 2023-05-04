@@ -15,31 +15,103 @@
         display: flex;
         justify-content: flex-end;
 
-            .registrateContenedor {
-                width: 50%;
-                text-align: center;
-                font-size: 80%;
-                padding-right: 20%;
-                margin-top: map-get($margins , 2);
-                
-                h2 {font-family: $main_font;}
+        .registrateContenedor {
+            width: 50%;
+            text-align: center;
+            font-size: 80%;
+            padding-right: 20%;
+            margin-top: map-get($margins , 2);
 
-                p {font-family: $secondary_font;
-                   font-size: 1rem;}
+            h2 {
+                font-family: $main_font;
+            }
 
-                form {font-family: $main_font;
+            p {
+                font-family: $secondary_font;
+                font-size: 1rem;
+            }
+
+            form {
+                font-family: $main_font;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+
                 label {
-                    margin-top: map-get($margins , 2 );
+                    margin-top: map-get($margins , 2);
                 }
+
                 input {
                     width: 50%;
                 }
-                .submit{
+
+                .submit {
                     margin-top: map-get($margins , 5);
-                }}
+                    width: 20%;
+                    height: 5vh;
+                    background-color: map-get($colors, main);
+                }
             }
         }
     }
+    
+
+    .beneficios_registro--contenedor {
+        margin-top: 2%;
+        color: whitesmoke;
+        margin-left: 15%;
+        width: 65%;
+        backdrop-filter: blur(12px);
+        border-radius: 1rem;
+        padding: 2%;
+
+        h2 {
+            font-family: $main_font;
+        }
+
+        p {
+            margin-top: 2%;
+            font-family: $secondary_font;
+        }
+
+        .lista_beneficios {
+            margin-left: 3%;
+        }
+    }
+
+}
+
+
+@media screen and (min-width:0px) and (max-width: 768px) {
+    .registrate {
+        .imagenRegistrate {
+            background-image: url(../assets/imagen/registro_background.jpg);
+            height: 60vh;
+
+            .registrateContenedor {
+                text-align: center;
+                backdrop-filter: blur(5px);
+                width: 100%;
+                padding: 5%;
+                color: map-get($colors, main);
+                margin: 0%;
+
+                h1 {
+                    color: map-get($colors , main);
+                    font-family: $main_font;
+                }
+            }
+        }
+
+        .beneficios_registro--contenedor {
+            margin-top: map-get($margins , 10 );
+            width: 80%;
+            margin-left: 10%;
+            h2 {padding: 2%;
+                text-align: center;
+                color: map-get($colors , third );}
+            p{margin-left: 3%;
+            text-align: center;}
+        }
+    }
+}
