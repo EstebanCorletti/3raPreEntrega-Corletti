@@ -113,14 +113,20 @@ main .container .quienes_somos, main .container .nosotros .contenedor_nosotros .
 }
 main .container .quienes_somos h2, main .container .nosotros .contenedor_nosotros .objetivo .te_esperamos h2, .nosotros .contenedor_nosotros .objetivo main .container .te_esperamos h2, main .container .ordernar_intro h2 {
   font-size: 2rem;
+  font-family: "Roboto", sans-serif;
 }
 main .container .quienes_somos a, main .container .nosotros .contenedor_nosotros .objetivo .te_esperamos a, .nosotros .contenedor_nosotros .objetivo main .container .te_esperamos a, main .container .ordernar_intro a {
   text-decoration: none;
   color: whitesmoke;
+  font-family: "Roboto", sans-serif;
 }
 main .container .quienes_somos a:hover, main .container .nosotros .contenedor_nosotros .objetivo .te_esperamos a:hover, .nosotros .contenedor_nosotros .objetivo main .container .te_esperamos a:hover, main .container .ordernar_intro a:hover {
   color: green;
 }
+main .container .ordernar_intro {
+  margin-top: 2%;
+}
+
 @media screen and (min-width: 0px) and (max-width: 768px) {
   main .imagenPrincipal img {
     width: 100%;

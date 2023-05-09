@@ -48,11 +48,13 @@ main {
             h2 {
                 @extend .quienes_somos;
                 font-size: 2rem;
+                font-family: $main-font;
             }
 
             a {
                 text-decoration: none;
                 color: whitesmoke;
+                font-family: $main-font;
 
                 &:hover {
                     color: green;
@@ -61,6 +63,7 @@ main {
         }
 
         .ordernar_intro {
+            margin-top: 2%;
             @extend .quienes_somos;
         }
     }
