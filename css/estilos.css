@@ -732,11 +732,11 @@ footer h4 {
   padding-top: 2%;
 }
 footer .container_footer {
-  margin-left: 5%;
-  width: 90%;
+  margin-left: 10%;
+  width: 85%;
 }
 footer .container_footer .sponsors img {
-  width: 70%;
+  width: 80%;
 }
 footer .container_footer .sponsors img:hover {
   opacity: 70%;
