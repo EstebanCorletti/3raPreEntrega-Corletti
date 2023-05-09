@@ -48,22 +48,6 @@ header {
 
 }
 
-@keyframes shake {
-
-    0% {
-        transform: rotate(5deg);
-    }
-
-    50% {
-        transform: rotate(-5deg);
-    }
-
-    100% {
-        transform: rotate(5deg);
-    }
-
-}
-
 
 @media screen and (min-width:0px) and (max-width: 768px) {
 
