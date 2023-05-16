@@ -4,7 +4,8 @@ header {
     top: 0%;
     background-color: map-get($colors , second);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    width: 100%;
 
     .logo {
         @include logo-nav-responsive (10%, 1% 0%);
@@ -23,7 +24,7 @@ header {
     }
 
     nav {
-        width: 40%;
+        width: 60%;
 
         ul {
             @include nav-display-flex (row, inherit);
@@ -45,6 +46,48 @@ header {
             }
         }
     }
+
+}
+
+
+@media screen and (min-width:0px) and (max-width: 991px) {
+
+    header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: map-get($colors , second);
+
+        .logo {
+            @include logo-nav-responsive (10%, 1% 0%);
+            }
+
+            nav {
+                width: 60%;
+        
+                ul {
+                    @include nav-display-flex (row, inherit);
+        
+                    li {
+                        padding: 0% 3%;
+        
+                        a {
+                            text-decoration: none;
+                            font-family: Arial, Helvetica, sans-serif;
+                            color: antiquewhite;
+                            font-size: 0.8rem;
+                            font-weight: bold;
+        
+                            &:hover {
+                                color: green;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
 
 }
 
@@ -78,6 +121,18 @@ header {
                 li {
                     padding: 5% 0%;
                     text-align: center;
+
+                    a {
+                        text-decoration: none;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: antiquewhite;
+                        font-size: 1rem;
+                        font-weight: bold;
+    
+                        &:hover {
+                            color: green;
+                        }
+                    }
                 }
 
             }

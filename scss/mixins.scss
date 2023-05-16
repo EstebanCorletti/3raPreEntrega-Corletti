@@ -12,7 +12,8 @@
 }
 
 @mixin contenedor-paginas-elementos ($size, $margin, $align) {
-    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
     width: $size;
     margin-top: $margin;
     text-align: $align;
@@ -39,9 +40,9 @@
 }
 
 @mixin contenedor-sucursales-elementos ($size, $margin) {
-    margin-left: 10%;
     width: $size;
     margin-top: $margin;
+    margin-left: 10%;
     color: map-get($colors , main);
 
 }

@@ -7,13 +7,14 @@
     .imagenNosotros {
         img {
             @include imagenes_principales (60vh);
+            object-fit: cover;
 
         }
     }
 
     .contenedor_nosotros {
         margin-left: 10%;
-        width: 75%;
+        @include contenedor-paginas-elementos (80%, 1%, left);
         margin-top: 1%;
 
         .objetivo {
@@ -27,6 +28,7 @@
                     border-radius: 1rem;
                     color: whitesmoke;
                     animation: float infinite 2s ease-in-out;
+                    border-width: map-get($grosores, 3);
                 }
             }
 
@@ -64,6 +66,7 @@
                 height: 40vh;
                 border: solid;
                 border-color: antiquewhite;
+                border-width: map-get($grosores, 3);
             }
 
             .texto_video {
@@ -91,7 +94,89 @@
 }
 
 
-@media screen and (min-width:0px) and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
+
+.nosotros {
+
+    .contenedor_nosotros {
+        margin-left: 5%;
+        @include contenedor-paginas-elementos (90%, 1%, left);
+        margin-top: 1%;
+
+        .objetivo {
+            margin-top: 2%;
+
+            .quienes_somos {
+                h1 {
+                    color: antiquewhite;
+                    text-align: center;
+                    font-family: $main_font;
+                    font-size: 2rem;
+                }
+
+                p {
+                    color: antiquewhite;
+                    margin-top: 5%;
+                    font-family: $secondary_font;
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+            }
+
+            .te_esperamos {
+                h3 {
+                    color: antiquewhite;
+                    text-align: center;
+                    font-family: $main_font;
+                }
+
+                p {color: antiquewhite;
+                    margin-top: 5%;
+                    font-family: $secondary_font;
+                    font-size: 0.8rem;
+                    text-align: center;}
+            
+            }
+
+        }
+
+        }
+
+
+        .video {
+            margin-top: 2%;
+            display: flex;
+            flex-direction: row-reverse;
+
+
+            .texto_video {
+                text-align: center;
+                h2 {
+                    color: antiquewhite;
+                    text-align: center;
+                    font-family: $main_font;
+                    margin-top: map-get($margins , 5);
+                    font-size: 1.8rem;
+                }
+
+                p {
+                    color: antiquewhite;
+                    margin-top: 5%;
+                    font-family: $secondary_font;
+                    font-size: 0.8rem;
+                    text-align: left;
+                }
+            }
+
+
+        }
+    
+}
+
+}
+
+
+@media screen and (max-width: 991px) {
 
     .nosotros {
 

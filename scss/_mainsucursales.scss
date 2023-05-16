@@ -13,12 +13,13 @@
     }
 
     .intro_sucursales {
-        @include contenedor-sucursales-elementos (75%, 2%);
+        @include contenedor-sucursales-elementos (80%, 2%);
 
     }
 
     .seccion_sucursales {
         @extend .intro_sucursales;
+        margin-top: 5%;
 
         .contenedor_moreno {
             width: 100%;
@@ -95,8 +96,66 @@
 }
 
 
+@media screen and (max-width: 1200px) {
 
-@media screen and (min-width:0px) and (max-width: 768px) {
+    .sucursales {
+        .intro_sucursales {
+            @include contenedor-sucursales-elementos (90%, 5%);
+            margin-left: 5%;
+
+            p {
+                margin-top: map-get($margins, 5);
+            }
+        }
+
+        .seccion_sucursales {
+            @include contenedor-sucursales-elementos (90%, 5%);
+            margin-left: 5%;
+
+            .contenedor_moreno {
+    
+                .contenedor_sucursales {
+    
+                    .sucursal {
+                        margin-top: map-get($margins, 10);
+    
+
+                        .sucursalInfo {
+                            margin-top: map-get($margins, 5);
+    
+                            h4 {
+                                text-decoration: underline;
+                                color: map-get($colors, third);
+                                font-family: $main_font;
+                                font-weight: map-get($grosores, 7);
+                                font-size: 1.5rem;
+                            }
+    
+                            h5 {
+                                font-family: $secondary_font;
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+    
+                }
+    
+                iframe {
+                    height: 60vh;
+                    padding: 1%;
+                    width: 100%;
+                    border-radius: 5%;
+                }
+            }
+
+        }
+    }
+
+
+}
+
+
+@media screen and (max-width: 991px) {
 
     .sucursales {
         .imagenSucursales {
@@ -110,8 +169,13 @@
         .intro_sucursales {
             @include contenedor-sucursales-elementos (80%, 5%);
 
+            h1 {
+                text-align: center;
+            }
+
             p {
                 margin-top: map-get($margins, 5);
+                text-align: center;
             }
         }
 
@@ -136,7 +200,7 @@
                         margin-top: map-get($margins, 10);
 
                         .sucursalInfo {
-                            margin-top: map-get($margins , 10);
+                            margin-top: map-get($margins , 5);
 
                             h4 {
                                 text-decoration: underline;
