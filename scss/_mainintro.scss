@@ -17,6 +17,7 @@ main {
 
         .introNosotros {
             margin-top: 2%;
+
             .columna_nosotros {
                 padding-left: 0%;
                 margin-left: 0%;
@@ -38,14 +39,16 @@ main {
 
                 h1 {
                     color: antiquewhite;
-                text-align: center;
+                    text-align: center;
                     font-size: 2rem;
                     font-family: $main-font;
                 }
 
-                p {color: antiquewhite;
+                p {
+                    color: antiquewhite;
                     text-align: center;
-                font-size: 0.9rem;}
+                    font-size: 0.9rem;
+                }
 
                 h2 {
                     margin-top: 5%;
@@ -67,17 +70,20 @@ main {
 
         .introMenu {
             margin-top: 2%;
+
             .ordernar_intro {
                 h1 {
                     color: antiquewhite;
-                text-align: center;
+                    text-align: center;
                     font-size: 2rem;
                     font-family: $main-font;
                 }
 
-                p {color: antiquewhite;
+                p {
+                    color: antiquewhite;
                     text-align: center;
-                    font-size: 0.9rem}
+                    font-size: 0.9rem
+                }
 
                 h2 {
                     margin-top: 5%;
@@ -97,19 +103,19 @@ main {
             }
 
             .columna_ordenar {
-            
-            .imagen_intro--menu {
-                img {
-                    width: 100%;
-                    border-color: map-get($colors, main);
-                    border: solid;
-                    border-radius: 1rem;
-                    color: map-get($colors, main);
-                    animation: float infinite 2s ease-in-out;
-                    border-width: map-get($grosores, 3);
+
+                .imagen_intro--menu {
+                    img {
+                        width: 100%;
+                        border-color: map-get($colors, main);
+                        border: solid;
+                        border-radius: 1rem;
+                        color: map-get($colors, main);
+                        animation: float infinite 2s ease-in-out;
+                        border-width: map-get($grosores, 3);
+                    }
                 }
             }
-        }
         }
     }
 }
@@ -202,12 +208,12 @@ main {
                         h1 {
                             font-size: 1.5rem;
                         }
-    
+
                         p {
                             @include menu-intro-texto ($secondary_font, 5%);
                             font-size: 0.9rem;
                         }
-    
+
                         h2 {
                             font-size: 1rem;
                         }
@@ -244,5 +250,3 @@ main {
     }
 
 }
-
-

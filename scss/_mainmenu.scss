@@ -40,7 +40,7 @@
                 .card-body {
                     background-color: map-get($colors, second);
                     @extend .card-container;
-                    border-width:0.1vh;
+                    border-width: 0.1vh;
 
                     .card-title {
                         @include card-body-text($main_font, 2%);

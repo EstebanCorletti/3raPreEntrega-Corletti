@@ -35,7 +35,7 @@
             .quienes_somos {
                 h1 {
                     color: antiquewhite;
-                    text-align: map-get($alineamientos, med );
+                    text-align: map-get($alineamientos, med);
                     font-family: $main_font;
                 }
 
@@ -49,7 +49,7 @@
             .te_esperamos {
                 h3 {
                     color: antiquewhite;
-                    text-align: map-get($alineamientos, med );
+                    text-align: map-get($alineamientos, med);
                     font-family: $main_font;
                 }
 
@@ -72,7 +72,7 @@
             .texto_video {
                 h2 {
                     color: antiquewhite;
-                    text-align: map-get($alineamientos, med );
+                    text-align: map-get($alineamientos, med);
                     font-family: $main_font;
                     margin-top: map-get($margins , 5);
                 }
@@ -80,7 +80,7 @@
                 p {
                     color: antiquewhite;
                     margin-top: 5%;
-                    text-align: map-get($alineamientos, der );
+                    text-align: map-get($alineamientos, der);
                     font-family: $secondary_font;
                 }
             }
@@ -96,81 +96,83 @@
 
 @media screen and (max-width: 1200px) {
 
-.nosotros {
+    .nosotros {
 
-    .contenedor_nosotros {
-        margin-left: 5%;
-        @include contenedor-paginas-elementos (90%, 1%, left);
-        margin-top: 1%;
+        .contenedor_nosotros {
+            margin-left: 5%;
+            @include contenedor-paginas-elementos (90%, 1%, left);
+            margin-top: 1%;
 
-        .objetivo {
-            margin-top: 2%;
+            .objetivo {
+                margin-top: 2%;
 
-            .quienes_somos {
-                h1 {
-                    color: antiquewhite;
-                    text-align: center;
-                    font-family: $main_font;
-                    font-size: 2rem;
+                .quienes_somos {
+                    h1 {
+                        color: antiquewhite;
+                        text-align: center;
+                        font-family: $main_font;
+                        font-size: 2rem;
+                    }
+
+                    p {
+                        color: antiquewhite;
+                        margin-top: 5%;
+                        font-family: $secondary_font;
+                        font-size: 0.8rem;
+                        text-align: map-get($alineamientos, med);
+                    }
                 }
 
-                p {
-                    color: antiquewhite;
-                    margin-top: 5%;
-                    font-family: $secondary_font;
-                    font-size: 0.8rem;
-                    text-align: map-get($alineamientos, med );
+                .te_esperamos {
+                    h3 {
+                        color: antiquewhite;
+                        text-align: map-get($alineamientos, med);
+                        font-family: $main_font;
+                    }
+
+                    p {
+                        color: antiquewhite;
+                        margin-top: 5%;
+                        font-family: $secondary_font;
+                        font-size: 0.8rem;
+                        align-self: map-get($alineamientos, med);
+                    }
+
                 }
+
             }
 
-            .te_esperamos {
-                h3 {
-                    color: antiquewhite;
-                    text-align: map-get($alineamientos, med );
-                    font-family: $main_font;
+            .video {
+                margin-top: 2%;
+                display: flex;
+                flex-direction: row-reverse;
+                text-align: map-get($alineamientos, med);
+
+
+                .texto_video {
+                    h2 {
+                        color: antiquewhite;
+                        text-align: center;
+                        font-family: $main_font;
+                        margin-top: map-get($margins , 5);
+                        font-size: 1.8rem;
+                    }
+
+                    p {
+                        color: antiquewhite;
+                        margin-top: 5%;
+                        font-family: $secondary_font;
+                        font-size: 0.8rem;
+                        text-align: center;
+                    }
                 }
 
-                p {color: antiquewhite;
-                    margin-top: 5%;
-                    font-family: $secondary_font;
-                    font-size: 0.8rem;
-                    align-self: map-get($alineamientos, med );}
-            
+
             }
 
         }
 
-        .video {
-            margin-top: 2%;
-            display: flex;
-            flex-direction: row-reverse;
-            text-align: map-get($alineamientos, med );
-
-
-            .texto_video {
-                h2 {
-                    color: antiquewhite;
-                    text-align: center;
-                    font-family: $main_font;
-                    margin-top: map-get($margins , 5);
-                    font-size: 1.8rem;
-                }
-
-                p {
-                    color: antiquewhite;
-                    margin-top: 5%;
-                    font-family: $secondary_font;
-                    font-size: 0.8rem;
-                    text-align: center;
-                }
-            }
-
-
-        }
-
-        }
-    
-}
+    }
 
 }
 

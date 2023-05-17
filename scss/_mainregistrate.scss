@@ -18,7 +18,7 @@
 
         .registrateContenedor {
             width: 50%;
-            text-align: map-get($alineamientos, med );
+            text-align: map-get($alineamientos, med);
             font-size: 80%;
             padding-right: 20%;
             margin-top: map-get($margins , 1);
@@ -36,7 +36,7 @@
                 font-family: $main_font;
                 display: flex;
                 flex-direction: column;
-                align-items: map-get($alineamientos, med );
+                align-items: map-get($alineamientos, med);
 
                 label {
                     margin-top: map-get($margins , 2);
@@ -89,7 +89,7 @@
 
             .registrateContenedor {
                 width: 50%;
-                text-align: map-get($alineamientos, med );
+                text-align: map-get($alineamientos, med);
                 font-size: 80%;
                 padding-right: 20%;
                 margin-top: map-get($margins , 1);
@@ -105,38 +105,38 @@
                     color: map-get($colors , second);
                 }
 
-              }
+            }
 
-            }
-        
-            .beneficios_registro--contenedor {
-                margin-top: 2%;
-                color: whitesmoke;
-                margin-left: 15%;
-                width: 65%;
-                backdrop-filter: blur(12px);
-                border-radius: 1rem;
-                padding: 2%;
-        
-                h2 {
-                    font-family: $main_font;
-                    font-size: 1.3rem;
-                }
-        
-                p {
-                    margin-top: 2%;
-                    font-family: $secondary_font;
-                    font-size: 0.8rem;
-                }
-        
-                .lista_beneficios {
-                    margin-left: 3%;
-                    font-size: 0.8rem;
-                }
-            }
-        
         }
-    
+
+        .beneficios_registro--contenedor {
+            margin-top: 2%;
+            color: whitesmoke;
+            margin-left: 15%;
+            width: 65%;
+            backdrop-filter: blur(12px);
+            border-radius: 1rem;
+            padding: 2%;
+
+            h2 {
+                font-family: $main_font;
+                font-size: 1.3rem;
+            }
+
+            p {
+                margin-top: 2%;
+                font-family: $secondary_font;
+                font-size: 0.8rem;
+            }
+
+            .lista_beneficios {
+                margin-left: 3%;
+                font-size: 0.8rem;
+            }
+        }
+
+    }
+
 }
 
 
@@ -175,14 +175,14 @@
 
             h2 {
                 padding: 2%;
-                text-align: map-get($alineamientos, med );
+                text-align: map-get($alineamientos, med);
                 color: map-get($colors , third);
                 font-size: 1.5rem;
             }
 
             p {
                 margin-left: 3%;
-                text-align: map-get($alineamientos, med );
+                text-align: map-get($alineamientos, med);
             }
         }
     }
