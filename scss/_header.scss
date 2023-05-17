@@ -4,7 +4,7 @@ header {
     top: 0%;
     background-color: map-get($colors , second);
     display: flex;
-    justify-content: center;
+    justify-content: map-get($alineamientos, med );
     width: 100%;
 
     .logo {
@@ -40,7 +40,7 @@ header {
                     font-weight: bold;
 
                     &:hover {
-                        color: green;
+                        color: map-get($colors , third );
                     }
                 }
             }
@@ -55,7 +55,7 @@ header {
     header {
         position: relative;
         display: flex;
-        align-items: center;
+        align-items: map-get($alineamientos, med );
         width: 100%;
         background-color: map-get($colors , second);
 
@@ -80,7 +80,7 @@ header {
                             font-weight: bold;
         
                             &:hover {
-                                color: green;
+                                color: map-get($alineamientos , med );
                             }
                         }
                     }
@@ -98,7 +98,7 @@ header {
         position: relative;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: map-get($alineamientos, med );
         width: 100%;
         background-color: map-get($colors , second);
 
@@ -120,7 +120,7 @@ header {
 
                 li {
                     padding: 5% 0%;
-                    text-align: center;
+                    text-align: map-get($alineamientos, med );
 
                     a {
                         text-decoration: none;

@@ -3,11 +3,11 @@ footer {
     background-image: url(../assets/imagen/footer_background.png);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: map-get($alineamientos, med );
 
     h4 {
         color: white;
-        text-align: center;
+        text-align: map-get($alineamientos , med );
         opacity: 0.8;
         padding-top: 2%;
     }
@@ -30,7 +30,7 @@ footer {
     .iconBox {
         margin-top: 2%;
         display: flex;
-        justify-content: center;
+        justify-content: map-get($alineamientos, med );
 
         a {
             padding: 0% 2%;
@@ -43,7 +43,7 @@ footer {
     }
 
     h5 {
-        text-align: center;
+        text-align: map-get($alineamientos, med );
         color: whitesmoke;
         margin-top: 5%;
     }

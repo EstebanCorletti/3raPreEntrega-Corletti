@@ -35,7 +35,7 @@
             .quienes_somos {
                 h1 {
                     color: antiquewhite;
-                    text-align: center;
+                    text-align: map-get($alineamientos, med );
                     font-family: $main_font;
                 }
 
@@ -49,7 +49,7 @@
             .te_esperamos {
                 h3 {
                     color: antiquewhite;
-                    text-align: center;
+                    text-align: map-get($alineamientos, med );
                     font-family: $main_font;
                 }
 
@@ -72,7 +72,7 @@
             .texto_video {
                 h2 {
                     color: antiquewhite;
-                    text-align: center;
+                    text-align: map-get($alineamientos, med );
                     font-family: $main_font;
                     margin-top: map-get($margins , 5);
                 }
@@ -80,7 +80,7 @@
                 p {
                     color: antiquewhite;
                     margin-top: 5%;
-                    text-align: right;
+                    text-align: map-get($alineamientos, der );
                     font-family: $secondary_font;
                 }
             }
@@ -119,14 +119,14 @@
                     margin-top: 5%;
                     font-family: $secondary_font;
                     font-size: 0.8rem;
-                    text-align: center;
+                    text-align: map-get($alineamientos, med );
                 }
             }
 
             .te_esperamos {
                 h3 {
                     color: antiquewhite;
-                    text-align: center;
+                    text-align: map-get($alineamientos, med );
                     font-family: $main_font;
                 }
 
@@ -134,23 +134,20 @@
                     margin-top: 5%;
                     font-family: $secondary_font;
                     font-size: 0.8rem;
-                    text-align: center;}
+                    align-self: map-get($alineamientos, med );}
             
             }
 
         }
 
-        }
-
-
         .video {
             margin-top: 2%;
             display: flex;
             flex-direction: row-reverse;
+            text-align: map-get($alineamientos, med );
 
 
             .texto_video {
-                text-align: center;
                 h2 {
                     color: antiquewhite;
                     text-align: center;
@@ -164,10 +161,12 @@
                     margin-top: 5%;
                     font-family: $secondary_font;
                     font-size: 0.8rem;
-                    text-align: left;
+                    text-align: center;
                 }
             }
 
+
+        }
 
         }
     

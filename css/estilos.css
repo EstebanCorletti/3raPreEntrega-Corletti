@@ -41,7 +41,7 @@ header nav ul li a {
   font-weight: bold;
 }
 header nav ul li a:hover {
-  color: green;
+  color: darkgreen;
 }
 
 @media screen and (min-width: 0px) and (max-width: 991px) {
@@ -77,7 +77,7 @@ header nav ul li a:hover {
     font-weight: bold;
   }
   header nav ul li a:hover {
-    color: green;
+    color: center;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -509,29 +509,27 @@ main .container .introMenu .columna_ordenar .imagen_intro--menu img {
     margin-top: 5%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
-    text-align: center;
+    align-self: center;
   }
-  .nosotros .video {
+  .nosotros .contenedor_nosotros .video {
     margin-top: 2%;
     display: flex;
     flex-direction: row-reverse;
-  }
-  .nosotros .video .texto_video {
     text-align: center;
   }
-  .nosotros .video .texto_video h2 {
+  .nosotros .contenedor_nosotros .video .texto_video h2 {
     color: antiquewhite;
     text-align: center;
     font-family: "Roboto", sans-serif;
     margin-top: 5%;
     font-size: 1.8rem;
   }
-  .nosotros .video .texto_video p {
+  .nosotros .contenedor_nosotros .video .texto_video p {
     color: antiquewhite;
     margin-top: 5%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
-    text-align: left;
+    text-align: center;
   }
 }
 @media screen and (max-width: 991px) {

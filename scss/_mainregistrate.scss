@@ -36,7 +36,7 @@
                 font-family: $main_font;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                align-items: map-get($alineamientos, med );
 
                 label {
                     margin-top: map-get($margins , 2);

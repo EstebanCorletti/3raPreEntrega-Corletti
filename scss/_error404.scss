@@ -17,7 +17,7 @@
         }
 
         p {
-            text-align: center;
+            text-align: map-get($alineamientos, med );
             font-size: 1rem;
             color: map-get($colors , main);
             font-family: $secondary_font;
